@@ -153,3 +153,41 @@ Los algoritmos de ordenamiento modernos (como Merge Sort) son Theta(n log n) por
 (Omega): El límite inferior ("Tardará al menos esto").
 
 (Theta): Cuando el límite superior e inferior son iguales (el comportamiento es exacto).
+
+## 8. Conclusiones
+
+## ¿Qué complejidad es más costosa y por qué ## 
+
+En términos de rendimiento, la complejidad más costosa es el orden de crecimiento factorial (O(n!)) debido a que
+realiza millones o inclusive billones de posibles combinaciones/permutaciones, obligando al procesador a trabajar
+más y por ende, a que su sistema término (hardware) pueda estar en peligro. Sin embargo, hay que considerar que,
+al ser la más costosa implica peligros o alertas, pero estas fuera de casos extremos no causan un daño al hardware
+aunque pueden generar fallos o congelamiento del programa, especialmente si los datos se van almacenando en la memoria.
+
+
+## ¿Qué se aprendió del análisis? ## 
+
+El tema de la teoría de la complejidad va más allá de la optimización para algoritmos con el fin de resolver un problema
+puesto que evalúa nuestra capacidad de poder mantener un razonamiento ordenado y sostenible en términos de recursos
+computacionales (finitos). Lo primordial en esta teoría es la eficiencia, que conscientiza al ingeniero
+sobre el costo de pasos a realizar (temporal) y el espacio máximo en memoria que ocupan dichos pasos (espacial)
+No solo se trata de que un programa pueda funcionar sin errores o ambiguedades, se trata igualmente de no tener problemas
+con el hardware (CPU y/o memoria RAM).
+
+
+El orden (O) de crecimiento es importante en esta última idea, pues es una guía la cual indica cómo direccionaremos
+la solución a un algoritmo con cantidades abismales de posibilidades y casos(lo que significa un crecimiento inevitable
+de datos) desde una sola repetición de alguna tarea (O(1)) hasta billones de posibles combinaciones (O(n!)), con
+la idea del mejor, peor y caso promedio, podemos estar preparados ante el contexto de un algoritmo exigente.
+Pero sobre todo, entendimos que la optimización lógica crece mejor que la potencia/velocidad del hardware.
+
+## ¿Qué les sorprendió más al ver el código ##
+Al principio creíamos que la notación Big O se escribía de forma explícita en un archivo de java. Sin embargo, este orden puede verse
+reflejado en la estructura mismo del algoritmo, en los bucles for y no hace falta escribir la notación como tal. Cabe resaltar que
+también nos asombró la forma en la que un crecimiento como O (log n) reduce la complejidad a su mitad.
+
+## Programar es aplicar números ##
+Tomando en cuenta la notación O, se puede sintetizar que, la programación aparte de saber crear una secuencia de pasos con el
+fin de resolver un objetivo se trata de apoyarnos en el lenguaje de funciones matemáticas (cuadráticas, logarítmicas, exponenciales)
+para poder predecir que tan exigente será un algoritmo, todo esto sin importar qué tan avanzada sea una computadora o la generación
+de sus componentes, un orden O(2^n) siempre será una solución no optimizada a un problema grande.
